@@ -11,6 +11,6 @@ class Genre < ActiveRecord::Base
   end
 
   def all_artist_names
-    artists.name 
+    self.songs.artists.name 
   end
 end
